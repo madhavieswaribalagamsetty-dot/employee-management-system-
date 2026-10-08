@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Employee Module</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>Employee Dashboard</h1>
+
+</header>
+
+<nav>
+
+    <a href="index.html">Home</a>
+
+    <a href="employee.html">Employee</a>
+
+    <a href="login.html">Logout</a>
+
+</nav>
+
+<main>
+
+<h2>Employee Module</h2>
+
+<div class="dashboard-grid">
+
+    <div class="module-card">
+
+        <h3>Employee Profile</h3>
+
+        <p>View and update personal information.</p>
+
+        <input id="empId"
+               type="number"
+               placeholder="Enter Employee ID">
+
+        <button onclick="viewEmployee()">
+            View Profile
+        </button>
+
+        <div id="employeeProfile"></div>
+
+    </div>
+
+
+    <div class="module-card">
+
+        <h3>Attendance Tracking</h3>
+
+        <p id="employeeAttendance">
+            Attendance information will appear here.
+        </p>
+
+    </div>
+
+
+    <div class="module-card">
+
+        <h3>Leave Application</h3>
+
+        <input
+            id="leaveReason"
+            placeholder="Leave reason"
+        >
+
+        <button onclick="applyLeave()">
+            Apply Leave
+        </button>
+
+        <p id="leaveMessage"></p>
+
+    </div>
+
+
+    <div class="module-card">
+
+        <h3>Leave Status</h3>
+
+        <p id="leaveStatus">
+            No leave information.
+        </p>
+
+    </div>
+
+
+    <div class="module-card">
+
+        <h3>Payslip Details</h3>
+
+        <p id="salary">
+            Salary information will appear here.
+        </p>
+
+    </div>
+
+
+    <div class="module-card">
+
+        <h3>Performance Report</h3>
+
+        <p id="performance">
+            Performance report will appear here.
+        </p>
+
+    </div>
+
+
+    <div class="module-card">
+
+        <h3>Company Announcements</h3>
+
+        <ul>
+
+            <li>Monthly meeting on Monday.</li>
+
+            <li>Submit leave requests before Friday.</li>
+
+            <li>Annual performance review started.</li>
+
+        </ul>
+
+    </div>
+
+</div>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

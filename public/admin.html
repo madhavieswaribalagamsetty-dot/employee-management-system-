@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Module</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>Admin Dashboard</h1>
+
+</header>
+
+<nav>
+
+    <a href="index.html">Home</a>
+
+    <a href="admin.html">Admin</a>
+
+    <a href="login.html">Logout</a>
+
+</nav>
+
+<main>
+
+<h2>Administrator Control Panel</h2>
+
+<div class="dashboard-grid">
+
+    <div class="module-card">
+
+        <h3>Employee Accounts</h3>
+
+        <p>
+            Manage employee accounts and records.
+        </p>
+
+        <button onclick="loadAdminEmployees()">
+            View Accounts
+        </button>
+
+    </div>
+
+
+    <div class="module-card">
+
+        <h3>Department Management</h3>
+
+        <input
+            id="departmentName"
+            placeholder="Department Name"
+        >
+
+        <button onclick="addDepartment()">
+            Add Department
+        </button>
+
+        <ul id="departmentList">
+
+            <li>Human Resources</li>
+
+            <li>Finance</li>
+
+            <li>Information Technology</li>
+
+            <li>Biotechnology</li>
+
+        </ul>
+
+    </div>
+
+
+    <div class="module-card">
+
+        <h3>Role-Based Access Control</h3>
+
+        <select id="roleAccess">
+
+            <option>Employee</option>
+
+            <option>HR</option>
+
+            <option>Admin</option>
+
+        </select>
+
+        <button onclick="showRole()">
+            Check Access
+        </button>
+
+        <p id="roleMessage"></p>
+
+    </div>
+
+
+    <div class="module-card">
+
+        <h3>User Permissions</h3>
+
+        <label>
+            <input type="checkbox" checked>
+            View Employees
+        </label>
+
+        <br>
+
+        <label>
+            <input type="checkbox">
+            Edit Employees
+        </label>
+
+        <br>
+
+        <label>
+            <input type="checkbox">
+            Delete Employees
+        </label>
+
+        <br>
+
+        <label>
+            <input type="checkbox">
+            Manage Salary
+        </label>
+
+    </div>
+
+
+    <div class="module-card">
+
+        <h3>Company Notifications</h3>
+
+        <textarea
+            id="notification"
+            placeholder="Enter notification"
+        ></textarea>
+
+        <button onclick="sendNotification()">
+            Send Notification
+        </button>
+
+        <p id="notificationMessage"></p>
+
+    </div>
+
+
+    <div class="module-card">
+
+        <h3>Workforce Analytics</h3>
+
+        <p>
+            Total Employees:
+            <strong id="totalEmployees">0</strong>
+        </p>
+
+        <p>
+            Departments:
+            <strong>4</strong>
+        </p>
+
+        <p>
+            System Status:
+            <strong>Online</strong>
+        </p>
+
+    </div>
+
+
+    <div class="module-card">
+
+        <h3>System Monitoring</h3>
+
+        <p>Server Status: Online</p>
+
+        <p>Database Status: Connected</p>
+
+        <p>System Security: Active</p>
+
+    </div>
+
+
+    <div class="module-card">
+
+        <h3>Workforce Reports</h3>
+
+        <button onclick="generateReport()">
+            Generate Report
+        </button>
+
+        <p id="report"></p>
+
+    </div>
+
+</div>
+
+
+<div class="form-section">
+
+<h3>Employee Account Records</h3>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+<th>Name</th>
+<th>Department</th>
+<th>Role</th>
+<th>Status</th>
+
+</tr>
+
+</thead>
+
+<tbody id="adminTable">
+
+</tbody>
+
+</table>
+
+</div>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

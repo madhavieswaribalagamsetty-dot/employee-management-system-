@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>HR Module</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>HR Management Dashboard</h1>
+
+</header>
+
+<nav>
+
+    <a href="index.html">Home</a>
+
+    <a href="hr.html">HR</a>
+
+    <a href="login.html">Logout</a>
+
+</nav>
+
+<main>
+
+<h2>HR Module</h2>
+
+<section class="form-section">
+
+<h3>Add New Employee</h3>
+
+<form id="employeeForm">
+
+<input
+    id="name"
+    placeholder="Employee Name"
+    required
+>
+
+<input
+    id="email"
+    type="email"
+    placeholder="Email"
+    required
+>
+
+<input
+    id="phone"
+    placeholder="Phone"
+    required
+>
+
+<input
+    id="department"
+    placeholder="Department"
+    required
+>
+
+<input
+    id="role"
+    placeholder="Role"
+    required
+>
+
+<input
+    id="salary"
+    type="number"
+    placeholder="Salary"
+    required
+>
+
+<input
+    id="password"
+    type="password"
+    placeholder="Employee Password"
+>
+
+<button type="submit">
+    Add Employee
+</button>
+
+</form>
+
+</section>
+
+
+<section>
+
+<h3>Employee Records</h3>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+<th>Name</th>
+<th>Email</th>
+<th>Department</th>
+<th>Role</th>
+<th>Salary</th>
+<th>Attendance</th>
+<th>Leave</th>
+<th>Performance</th>
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody id="employeeTable">
+
+</tbody>
+
+</table>
+
+</section>
+
+
+<section class="form-section">
+
+<h3>Manage Attendance</h3>
+
+<input
+    id="attendanceId"
+    type="number"
+    placeholder="Employee ID"
+>
+
+<select id="attendanceValue">
+
+<option value="Present">
+    Present
+</option>
+
+<option value="Absent">
+    Absent
+</option>
+
+<option value="Leave">
+    Leave
+</option>
+
+</select>
+
+<button onclick="updateAttendance()">
+    Update Attendance
+</button>
+
+</section>
+
+
+<section class="form-section">
+
+<h3>Leave Management</h3>
+
+<input
+    id="leaveId"
+    type="number"
+    placeholder="Employee ID"
+>
+
+<select id="leaveDecision">
+
+<option value="Approved">
+    Approve
+</option>
+
+<option value="Rejected">
+    Reject
+</option>
+
+<option value="Pending">
+    Pending
+</option>
+
+</select>
+
+<button onclick="updateLeave()">
+    Update Leave
+</button>
+
+</section>
+
+
+<section class="form-section">
+
+<h3>Performance Evaluation</h3>
+
+<input
+    id="performanceId"
+    type="number"
+    placeholder="Employee ID"
+>
+
+<select id="performanceValue">
+
+<option value="Excellent">
+    Excellent
+</option>
+
+<option value="Good">
+    Good
+</option>
+
+<option value="Average">
+    Average
+</option>
+
+<option value="Needs Improvement">
+    Needs Improvement
+</option>
+
+</select>
+
+<button onclick="updatePerformance()">
+    Evaluate
+</button>
+
+</section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

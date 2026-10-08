@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1791450145021,
+    "name": "gowtham",
+    "email": "gowtham@123",
+    "phone": "25895545",
+    "department": "bio",
+    "role": "manager",
+    "salary": "500000",
+    "attendance": "Absent",
+    "leaveStatus": "Approved",
+    "performance": "Good",
+    "password": "125896"
+  },
+  {
+    "id": 1791450604366,
+    "name": "chisty",
+    "email": "sdkmc91@gmail.com",
+    "phone": "987654321",
+    "department": "bio",
+    "role": "employ",
+    "salary": "30000",
+    "attendance": "Leave",
+    "leaveStatus": "Approved",
+    "performance": "Needs Improvement",
+    "password": "23415168"
+  }
+]
